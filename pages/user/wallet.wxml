@@ -1,0 +1,34 @@
+<view style="width:94%;margin:0 auto;">
+	<view class="template-view">
+		<view class="balance-title">当前余额</view>
+		<view class="balance-value">9999.99</view>
+		<image class="walletBack" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/walletback.png"></image>
+	</view>
+	<view class="passageway">
+		<view data-event-opts="{{[['tap',[['to',['/pages/user/record',['o']]]]]]}}" class="pass-item" bindtap="__e">充值记录</view>
+		<view data-event-opts="{{[['tap',[['to',['/pages/user/record',['o']]]]]]}}" class="pass-item" bindtap="__e">消费明细</view>
+		<view data-event-opts="{{[['tap',[['to',['/pages/user/record',['o']]]]]]}}" class="pass-item" bindtap="__e">退款记录</view>
+	</view>
+	<view class="money-view">
+		<view class="money-item">
+			<view class="left-view">1000</view>
+			<view class="right-view">送100</view>
+		</view>
+		<view class="money-item">
+			<view class="left-view">3000</view>
+			<view class="right-view">送400</view>
+		</view>
+		<view class="money-item">
+			<view class="left-view">5000</view>
+			<view class="right-view">送800</view>
+		</view>
+		<view class="money-item">
+			<view class="left-view">10000</view>
+			<view class="right-view">送2000</view>
+		</view>
+		<view style="width:96%;margin:14rpx 0rpx;">
+			<u-input vue-id="27c4b332-1" placeholder="请输入充值金额" type="number" border="none" customStyle="{{$root.a0}}" bind:__l="__l"></u-input>
+		</view>
+	</view>
+	<view class="bottom-view">充值并支付</view>
+</view>

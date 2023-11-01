@@ -1,0 +1,19 @@
+
+page{
+	background: #eee;
+}
+.record-view{
+	width:100%;
+	background: #fff;
+	border-radius: 20rpx;
+	margin-top: 20rpx;
+}
+.record-item{
+	width:96%;
+	margin:0 auto;
+	height: 80rpx;
+	line-height: 80rpx;
+	display: flex;
+	align-items: center;
+}
+

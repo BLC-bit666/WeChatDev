@@ -1,0 +1,105 @@
+<view>
+	<view data-event-opts="{{[['tap',[['to',['/pages/user/addresslist',['o']]]]]]}}" class="address-view" bindtap="__e">
+		<view>
+			<u-icon vue-id="0b6e0670-1" name="map-fill" color="#fff" size="15" label="一位不愿意透露姓名的吴俊雄先生 13570513190" labelColor="#fff" labelSize="14" bind:__l="__l"></u-icon>
+		</view>
+		<view style="width:100%;display:flex;justify-content:flex-end;align-items:center;position:relative;">
+			<u-icon vue-id="0b6e0670-2" name="arrow-right" color="#fff" customStyle="{{$root.a0}}" bind:__l="__l"></u-icon>
+		</view>
+		<view style="font-size:26rpx;color:#fff;margin-top:20rpx;">陕西省西安市临潼区陕鼓大道058号</view>
+	</view>
+	<view class="card-view">
+		<block wx:for="{{$root.l0}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+			<u-row vue-id="{{'0b6e0670-3-'+index}}" justify="flex-start" customStyle="{{item.a1}}" align="flex-start" bind:__l="__l" vue-slots="{{['default']}}">
+				<u-col vue-id="{{('0b6e0670-4-'+index)+','+('0b6e0670-3-'+index)}}" span="3.5" customStyle="{{item.a2}}" bind:__l="__l" vue-slots="{{['default']}}">
+					<image class="project-image" src="{{item.$orig.icon}}"></image>
+				</u-col>
+				<u-col vue-id="{{('0b6e0670-5-'+index)+','+('0b6e0670-3-'+index)}}" span="5" customStyle="{{item.a3}}" bind:__l="__l" vue-slots="{{['default']}}">
+					<view style="display:flex;flex-direction:column;justify-content:space-between;height:120rpx;">
+						<view class="project-title">{{item.$orig.name+''}}<view style="margin-left:20rpx;">
+								<u-icon vue-id="{{('0b6e0670-6-'+index)+','+('0b6e0670-5-'+index)}}" name="clock" size="13" color="#999" labelSize="10" label="{{item.$orig.timer+'分钟'}}" labelColor="#999" bind:__l="__l"></u-icon>
+							</view>
+						</view>
+						<view class="num-view">{{"超"+item.$orig.num+"人选择"}}</view>
+						<view class="project-price">
+							<view class="rmb-icon">￥</view>
+							<view class="price-true">{{item.$orig.original}}</view>
+						</view>
+					</view>
+				</u-col>
+				<u-col vue-id="{{('0b6e0670-7-'+index)+','+('0b6e0670-3-'+index)}}" span="3.4" justify="center" align="center" customStyle="{{item.a4}}" bind:__l="__l" vue-slots="{{['default']}}">
+					<u-number-box vue-id="{{('0b6e0670-8-'+index)+','+('0b6e0670-7-'+index)}}" integer="{{true}}" step="{{1}}" min="{{0}}" max="{{99}}" value="{{item.$orig.buycount}}" data-event-opts="{{[['^input',[['__set_model',['$0','buycount','$event',[]],[[['projectList','',index]]]],['changeInput']]]]}}" bind:input="__e" bind:__l="__l" vue-slots="{{['minus','input','plus']}}">
+						<view class="minus" slot="minus">
+							<u-icon vue-id="{{('0b6e0670-9-'+index)+','+('0b6e0670-8-'+index)}}" name="minus" size="12" color="#24c373" bind:__l="__l"></u-icon>
+						</view><text class="input" style="width:15px;text-align:center;" slot="input">{{item.$orig.buycount}}</text>
+						<view class="plus" slot="plus">
+							<u-icon vue-id="{{('0b6e0670-10-'+index)+','+('0b6e0670-8-'+index)}}" name="plus" color="#FFFFFF" size="12" bind:__l="__l"></u-icon>
+						</view>
+					</u-number-box>
+				</u-col>
+			</u-row>
+		</block>
+		<view class="card-item">
+			<view class="card-item-chi"><label class="card-item-title">服务厨师</label><label>隔壁老王</label></view>
+			<view class="card-item-chi"><label class="card-item-title">服务时间</label>
+				<view style="display:flex;"><label style="color:#24c373;">12/3 21:00</label>
+					<u-icon vue-id="0b6e0670-11" name="arrow-right" color="#24c373" size="14" bind:__l="__l"></u-icon>
+				</view>
+			</view>
+		</view>
+		<view class="card-item">
+			<view class="card-item-chi"><label class="card-item-title">出行方式</label>
+				<view style="display:flex;">
+					<view class="tag-view success">滴滴/出租</view>
+					<view class="tag-view info">公交/地铁</view>
+				</view>
+			</view>
+			<view style="font-size:24rpx;color:#999;width:96%;margin:0 auto;">全程共1353.64公里,出租出行收取来回车费，白天起步12元，超过3公里每公里增加2.6元</view>
+			<view class="card-item-chi"><label class="card-item-title">车费</label><label style="color:red;">￥56.49</label></view>
+			<view class="card-item-chi"><label class="card-item-title">优惠券</label>
+				<view style="display:flex;"><label style="color:#999;font-weight:100;">无可用优惠券</label>
+					<u-icon vue-id="0b6e0670-12" name="arrow-right" color="#000" size="14" bind:__l="__l"></u-icon>
+				</view>
+			</view>
+			<view class="card-item-chi"><label class="card-item-title">备注</label>
+				<view style="display:flex;font-weight:100;">
+					<u-input vue-id="0b6e0670-13" type="text" placeholder="选填" border="none" inputAlign="right" bind:__l="__l"></u-input>
+					<u-icon vue-id="0b6e0670-14" name="arrow-right" color="#000" size="14" bind:__l="__l"></u-icon>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="title-top" style="margin-top:10rpx;">支付方式</view>
+	<view class="card-view" style="margin-top:10rpx;">
+		<view class="card-item">
+			<view data-event-opts="{{[['tap',[['changePay',[0]]]]]}}" class="card-item-chi" bindtap="__e"><label class="card-item-title" style="display:flex;align-items:center;">
+					<u-icon vue-id="0b6e0670-15" name="rmb-circle-fill" color="#fec947" size="18" bind:__l="__l"></u-icon>余额支付(余额:126)
+				</label>
+				<view style="display:flex;font-weight:100;">
+					<u-icon vue-id="0b6e0670-16" name="{{payChecked==0?'checkmark-circle-fill':'checkmark-circle'}}" color="{{payChecked==0?'#24c373':'#999'}}" size="18" bind:__l="__l"></u-icon>
+				</view>
+			</view>
+			<view data-event-opts="{{[['tap',[['changePay',[1]]]]]}}" class="card-item-chi" bindtap="__e"><label class="card-item-title" style="display:flex;align-items:center;">
+					<u-icon vue-id="0b6e0670-17" name="weixin-circle-fill" color="#24c373" size="18" bind:__l="__l"></u-icon>微信支付
+				</label>
+				<view style="display:flex;font-weight:100;">
+					<u-icon vue-id="0b6e0670-18" name="{{payChecked==1?'checkmark-circle-fill':'checkmark-circle'}}" color="{{payChecked==1?'#24c373':'#999'}}" size="18" bind:__l="__l"></u-icon>
+				</view>
+			</view>
+			<view data-event-opts="{{[['tap',[['changePay',[2]]]]]}}" class="card-item-chi" bindtap="__e"><label class="card-item-title" style="display:flex;align-items:center;">
+					<u-icon vue-id="0b6e0670-19" name="zhifubao-circle-fill" color="#00aaff" size="18" bind:__l="__l"></u-icon>支付宝支付
+				</label>
+				<view style="display:flex;font-weight:100;">
+					<u-icon vue-id="0b6e0670-20" name="{{payChecked==2?'checkmark-circle-fill':'checkmark-circle'}}" color="{{payChecked==2?'#24c373':'#999'}}" size="18" bind:__l="__l"></u-icon>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view style="width:100%;height:150rpx;"></view>
+	<view class="bottom-view">
+		<view class="bottom-item">
+			<view style="display:flex;align-items:center;color:red;"><label style="font-size:24rpx;">合记:</label><label style="font-weight:bold;font-size:36rpx;">￥606.00</label></view>
+			<view data-event-opts="{{[['tap',[['to',['/pages/order/create',['o']]]]]]}}" class="button-view btn-push" bindtap="__e">提交订单</view>
+		</view>
+	</view>
+</view>

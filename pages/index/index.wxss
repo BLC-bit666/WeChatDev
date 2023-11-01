@@ -1,0 +1,67 @@
+page {
+	background: #eeeeee;
+}
+.bottom-view {
+	width: 94%;
+	margin: 0 auto;
+}
+.project-image {
+	width: 200rpx;
+	height: 155rpx;
+	border-radius: 20rpx;
+	margin: 10rpx 0rpx;
+}
+.project-title {
+	font-weight: bold;
+	font-size: 30rpx;
+	/* margin-top: 8rpx; */
+	display: flex;
+	align-items: center;
+}
+.project-tips {
+	font-size: 24rpx;
+	color: #999;
+	height: 40rpx;
+	line-height: 40rpx;
+	/* margin:8rpx 0rpx; */
+}
+.project-price {
+	display: flex;
+	align-items: baseline;
+	/* margin-top: 10rpx; */
+}
+.rmb-icon {
+	font-size: 20rpx;
+	color: red;
+}
+.price-true {
+	font-size: 32rpx;
+	font-weight: bold;
+	color: red;
+}
+.price-false {
+	font-size: 24rpx;
+	color: #d9d9d9;
+	text-decoration: line-through;
+	margin-left: 8rpx;
+}
+.num-view {
+	color: #999;
+	font-size: 20rpx;
+	/* margin-top: 16rpx; */
+	text-align: center;
+	margin-right: 20rpx;
+}
+.button-view{
+	width:140rpx;
+	height: 55rpx;
+	line-height: 55rpx;
+	text-align: center;
+	background: #24c373;
+	color:#fff;
+	border-radius: 16rpx;
+	font-size: 26rpx;
+	margin-right: 10rpx;
+	/* margin-top: 30rpx; */
+}
+

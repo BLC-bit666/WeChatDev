@@ -1,0 +1,40 @@
+
+page{
+	background: #eee;
+}
+.address-view {
+	width: 100%;
+	border-radius: 20rpx;
+	background: #fff;
+	margin-top: 20rpx;
+}
+.address-info {
+	font-size: 26rpx;
+	color: #000;
+	width: 96%;
+	margin:0 auto;
+	padding: 20rpx 0rpx;
+	border-bottom: 2rpx solid #eee;
+}
+.address-edit {
+	padding: 10rpx 0rpx;
+	width: 96%;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.bottom-view{
+	width:90%;
+	/* margin:0 auto; */
+	left:5%;
+	background: #24c373;
+	color:#fff;
+	height: 80rpx;
+	line-height: 80rpx;
+	text-align: center;
+	font-size: 30rpx;
+	border-radius: 20rpx;
+	position: fixed;
+	bottom:20rpx;
+}
+

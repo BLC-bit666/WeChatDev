@@ -1,0 +1,20 @@
+<view style="width:94%;margin:0 auto;">
+	<u-sticky vue-id="15751e4a-1" offset-top="-50" bind:__l="__l" vue-slots="{{['default']}}">
+		<view class="search-view">
+			<u-icon vue-id="{{('15751e4a-2')+','+('15751e4a-1')}}" name="map" color="#000" labelSize="14" labelColor="#000" label="临潼区" bind:__l="__l"></u-icon>
+			<view style="width:3%;"></view>
+			<u-search bind:input="__e" vue-id="{{('15751e4a-3')+','+('15751e4a-1')}}" placeholder="请输入厨师名称" bgColor="#fff" showAction="{{false}}" value="{{keyword}}" data-event-opts="{{[['^input',[['__set_model',['','keyword','$event',[]]]]]]}}" bind:__l="__l"></u-search>
+		</view>
+	</u-sticky>
+	<view class="tag-view">
+		<u-tag vue-id="15751e4a-4" type="success" text="推荐" bgColor="{{sortCurr==0?'#24c373':'#fff'}}" color="{{sortCurr==0?'#fff':'#000'}}" borderColor="{{sortCurr==0?'#24c373':'#fff'}}" data-event-opts="{{[['^click',[['changeSort',[0]]]]]}}" bind:click="__e" bind:__l="__l"></u-tag>
+		<view style="width:20rpx;"></view>
+		<u-tag vue-id="15751e4a-5" type="success" text="好评优先" bgColor="{{sortCurr==1?'#24c373':'#fff'}}" color="{{sortCurr==1?'#fff':'#000'}}" borderColor="{{sortCurr==1?'#24c373':'#fff'}}" data-event-opts="{{[['^click',[['changeSort',[1]]]]]}}" bind:click="__e" bind:__l="__l"></u-tag>
+		<view style="width:20rpx;"></view>
+		<u-tag vue-id="15751e4a-6" type="success" text="速度优先" bgColor="{{sortCurr==2?'#24c373':'#fff'}}" color="{{sortCurr==2?'#fff':'#000'}}" borderColor="{{sortCurr==2?'#24c373':'#fff'}}" data-event-opts="{{[['^click',[['changeSort',[2]]]]]}}" bind:click="__e" bind:__l="__l"></u-tag>
+	</view>
+	<view>
+		<tech-list bind:click="__e" vue-id="15751e4a-7" data-event-opts="{{[['^click',[['to',['/pages/order/create',['o']]]]]]}}" bind:__l="__l"></tech-list>
+	</view>
+	<view style="width:100%;height:100rpx;"></view>
+</view>

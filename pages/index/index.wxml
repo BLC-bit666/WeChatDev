@@ -1,0 +1,44 @@
+<view>
+	<u-swiper vue-id="8dd740cc-1" list="{{banner}}" height="200" bgColor="#eeeeee" bind:__l="__l"></u-swiper>
+	<view class="bottom-view">
+		<u-row vue-id="8dd740cc-2" justify="space-between" gutter="10" customStyle="{{$root.a0}}" bind:__l="__l" vue-slots="{{['default']}}">
+			<block wx:for="{{sortList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+				<u-col vue-id="{{('8dd740cc-3-'+index)+','+('8dd740cc-2')}}" span="3" align="center" customStyle="{{currSort==index?currCol:colStyle}}" data-event-opts="{{[['^click',[['changeSort',[index]]]]]}}" bind:click="__e" bind:__l="__l" vue-slots="{{['default']}}">
+					<view style="text-align:center;">{{''+item+''}}</view>
+				</u-col>
+			</block>
+		</u-row>
+		<block wx:for="{{$root.l0}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+			<view style="width:100%;margin:0 auto;background:#fff;border-radius:30rpx;display:flex;justify-content:flex-start;margin-top:20rpx;">
+				<view style="margin:0rpx 10rpx;display:flex;align-items:center;">
+					<image class="project-image" src="{{item.$orig.icon}}"></image>
+				</view>
+				<view style="width:75%;margin-left:10rpx;">
+					<view style="display:flex;justify-content:space-between;align-items:center;margin-top:10rpx;">
+						<view class="project-title"><label>{{item.$orig.name}}</label>
+							<block wx:if="{{item.$orig.tag}}">
+								<u-tag vue-id="{{'8dd740cc-4-'+index}}" type="success" size="mini" text="{{item.$orig.tag}}" shape="square" bgColor="#edfff1" color="#24c373" borderColor="#edfff1" customStyle="{{item.a1}}" bind:__l="__l"></u-tag>
+							</block>
+						</view>
+						<view class="num-view">{{"超"+item.$orig.num+"人选择"}}</view>
+					</view>
+					<view style="display:flex;justify-content:space-between;align-items:center;margin-top:10rpx;">
+						<view class="project-tips">{{item.$orig.tips}}</view>
+						<view class="button-view">选择厨师</view>
+					</view>
+					<view>
+						<view class="project-price">
+							<view class="rmb-icon">￥</view>
+							<view class="price-true">{{item.$orig.original}}</view>
+							<view class="price-false">{{"￥"+item.$orig.price}}</view>
+							<view style="margin-left:20rpx;">
+								<u-icon vue-id="{{'8dd740cc-5-'+index}}" name="clock-fill" size="15" color="#24c373" labelSize="12" label="{{item.$orig.timer+'分钟'}}" labelColor="#999" bind:__l="__l"></u-icon>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+	<view style="width:100%;height:100rpx;"></view>
+</view>

@@ -1,0 +1,17 @@
+<view style="width:94%;margin:0 auto;">
+	<view class="title-view">
+		<view class="title-name">
+			<u-icon vue-id="bccaa3b6-1" name="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/success.png" size="12" bind:__l="__l"></u-icon>签约商家：
+		</view>
+		<view class="store-name">西安市临潼区饭多多工作室<image style="width:100rpx;height:32rpx;margin-left:10rpx;" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/renzheng.png"></image>
+		</view>
+	</view>
+	<view style="margin-top:50rpx;">
+		<view class="store-name" style="font-weight:bold;">营业执照</view>
+		<image src="http://img.cjyun.org/a/10008/202105/0dab4f249c4a721440938cc5cbd9eeff.jpeg" mode="aspectFit"></image>
+	</view>
+	<view style="margin-top:50rpx;">
+		<view class="store-name" style="font-weight:bold;">职业资格证</view>
+		<image src="http://img.cjyun.org/a/10008/202105/0dab4f249c4a721440938cc5cbd9eeff.jpeg" mode="aspectFit"></image>
+	</view>
+</view>

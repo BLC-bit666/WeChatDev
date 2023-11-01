@@ -1,0 +1,241 @@
+#serss.data-v-675103fe {
+  background-color: #e4e4e4;
+}
+.page.data-v-675103fe {
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.page .no.data-v-675103fe {
+  background-color: white;
+  padding-top: 50rpx;
+}
+.page .group.data-v-675103fe {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+.page .group .section_1.data-v-675103fe {
+  padding: 18rpx 32rpx 14rpx;
+  background-color: white;
+}
+.page .group .section_1 .text-wrapper.data-v-675103fe {
+  padding: 12rpx 0;
+  flex: 1 1 auto;
+  color: #999999;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  white-space: nowrap;
+  background-color: #f4f4f4;
+  border-radius: 16rpx;
+  height: 64rpx;
+}
+.page .group .section_1 .text-wrapper .text_1.data-v-675103fe {
+  margin-left: 24rpx;
+}
+.page .group .section_1 .text-wrapper_1.data-v-675103fe {
+  margin-left: 32rpx;
+  padding: 12rpx 0;
+  color: white;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  white-space: nowrap;
+  background-color: #18b567;
+  border-radius: 16rpx;
+  width: 128rpx;
+  height: 64rpx;
+}
+.page .group .section_2.data-v-675103fe {
+  background-color: white;
+}
+.page .group .section_2 .group_1.data-v-675103fe {
+  padding: 22rpx 0 16rpx;
+}
+.page .group .section_2 .group_1 .text_3.data-v-675103fe {
+  color: black;
+  font-size: 28rpx;
+  font-weight: 500;
+  line-height: 40rpx;
+  white-space: nowrap;
+}
+.page .group .section_2 .group_1 .text_4.data-v-675103fe {
+  color: #666666;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  white-space: nowrap;
+}
+.page .group .section_2 .section_3.data-v-675103fe {
+  margin-left: 56rpx;
+  background-color: #18b567;
+  border-radius: 4rpx;
+  width: 56rpx;
+  height: 8rpx;
+}
+.page .group .group_2.data-v-675103fe {
+  padding-bottom: 1224rpx;
+  position: relative;
+}
+.page .group .group_2 .section_4.data-v-675103fe {
+  background-image: linear-gradient(180deg, white 0%, white 0%, #f8f8f8 100%, #f8f8f8 100%);
+  height: 48rpx;
+}
+.page .group .group_2 .list.data-v-675103fe {
+  position: absolute;
+  left: 32rpx;
+  right: 32rpx;
+  top: 20rpx;
+}
+.page .group .group_2 .list .list-item.data-v-675103fe {
+  padding-left: 44rpx;
+  background-color: rgba(24, 181, 103, 0.12);
+  border-radius: 24rpx;
+}
+.page .group .group_2 .list .list-item.data-v-675103fe:not(:first-of-type) {
+  margin-top: 24rpx;
+}
+.page .group .group_2 .list .list-item .left-group.data-v-675103fe {
+  align-self: center;
+  width: 160rpx;
+}
+.page .group .group_2 .list .list-item .left-group .top-group.data-v-675103fe {
+  white-space: nowrap;
+}
+.page .group .group_2 .list .list-item .left-group .top-group .text_5.data-v-675103fe {
+  color: #18b567;
+  font-size: 26rpx;
+  line-height: 38rpx;
+}
+.page .group .group_2 .list .list-item .left-group .top-group .text_7.data-v-675103fe {
+  color: #18b567;
+  font-size: 50rpx;
+  line-height: 76rpx;
+}
+.page .group .group_2 .list .list-item .left-group .text_9.data-v-675103fe {
+  margin-top: 10rpx;
+  color: #505050;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  white-space: nowrap;
+}
+.page .group .group_2 .list .list-item .right-section.data-v-675103fe {
+  margin-left: 46rpx;
+  padding: 42rpx 40rpx;
+  flex: 1 1 auto;
+  background-image: url("https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/61ab188e1f655f0011bbaece/61e7d9270c0e3200129ec72c/16425844644139900541.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 34rpx;
+  top: 0px;
+  position: absolute;
+  right: 0px;
+}
+.page .group .group_2 .list .list-item .right-section .text_11.data-v-675103fe {
+  color: white;
+  font-size: 32rpx;
+  font-weight: 500;
+  line-height: 44rpx;
+  white-space: nowrap;
+}
+.page .group .group_2 .list .list-item .right-section .text_13.data-v-675103fe {
+  margin-top: 8rpx;
+  color: white;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  white-space: nowrap;
+}
+.page .group .group_2 .list .list-item .right-section .text_133.data-v-675103fe {
+  margin-top: 8rpx;
+  color: #666666;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  text-decoration: line-through;
+  white-space: nowrap;
+}
+.page .group .group_3.data-v-675103fe {
+  padding-bottom: 1224rpx;
+  position: relative;
+}
+.page .group .group_3 .section_4.data-v-675103fe {
+  background-image: linear-gradient(180deg, white 0%, white 0%, #f8f8f8 100%, #f8f8f8 100%);
+  height: 48rpx;
+}
+.page .group .group_3 .list.data-v-675103fe {
+  position: absolute;
+  left: 32rpx;
+  right: 32rpx;
+  top: 20rpx;
+}
+.page .group .group_3 .list .list-item.data-v-675103fe {
+  background-color: white;
+  border-radius: 24rpx;
+}
+.page .group .group_3 .list .list-item.data-v-675103fe:not(:first-of-type) {
+  margin-top: 24rpx;
+}
+.page .group .group_3 .list .list-item .top-section.data-v-675103fe {
+  padding-left: 44rpx;
+  background-color: #e4e4e4;
+  border-radius: 24rpx 24rpx 0px 0px;
+}
+.page .group .group_3 .list .list-item .top-section .left-group.data-v-675103fe {
+  align-self: center;
+  width: 160rpx;
+}
+.page .group .group_3 .list .list-item .top-section .left-group .top-group.data-v-675103fe {
+  white-space: nowrap;
+}
+.page .group .group_3 .list .list-item .top-section .left-group .top-group .text_5.data-v-675103fe {
+  color: #666666;
+  font-size: 32rpx;
+  line-height: 38rpx;
+}
+.page .group .group_3 .list .list-item .top-section .left-group .top-group .text_7.data-v-675103fe {
+  color: #666666;
+  font-size: 50rpx;
+  line-height: 76rpx;
+}
+.page .group .group_3 .list .list-item .top-section .left-group .text_9.data-v-675103fe {
+  margin-top: 10rpx;
+  color: #666666;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  white-space: nowrap;
+}
+.page .group .group_3 .list .list-item .top-section .right-section.data-v-675103fe {
+  margin-left: 46rpx;
+  padding: 42rpx 40rpx;
+  flex: 1 1 auto;
+  background-image: url("https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/61ab188e1f655f0011bbaece/61e7d9270c0e3200129ec72c/16425844648958490621.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 176rpx;
+}
+.page .group .group_3 .list .list-item .top-section .right-section .text_11.data-v-675103fe {
+  color: white;
+  font-size: 32rpx;
+  font-weight: 500;
+  line-height: 44rpx;
+  white-space: nowrap;
+}
+.page .group .group_3 .list .list-item .top-section .right-section .text_13.data-v-675103fe {
+  margin-top: 8rpx;
+  color: white;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  white-space: nowrap;
+}
+.page .group .group_3 .list .list-item .bottom-group.data-v-675103fe {
+  padding: 14rpx 24rpx 16rpx;
+  color: #666666;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  white-space: nowrap;
+}
+.page .group .group_3 .list .list-item .bottom-group .image_1.data-v-675103fe {
+  width: 32rpx;
+  height: 32rpx;
+}
+.page .group .group_3 .list .list-item .bottom-group .text_15.data-v-675103fe {
+  margin-left: 8rpx;
+}
+

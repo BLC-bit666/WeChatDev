@@ -1,0 +1,19 @@
+
+page {
+	background: #eee;
+}
+.bottom-view {
+	width: 90%;
+	/* margin:0 auto; */
+	left: 5%;
+	background: #24c373;
+	color: #fff;
+	height: 80rpx;
+	line-height: 80rpx;
+	text-align: center;
+	font-size: 30rpx;
+	border-radius: 20rpx;
+	position: fixed;
+	bottom: 20rpx;
+}
+

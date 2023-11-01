@@ -1,0 +1,38 @@
+<view>
+	<image class="top-view" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/zhopin.png"></image>
+	<view class="center-view">
+		<image class="add-we" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/zmicon1-1698820502172-3.png"></image>
+		<view class="from-view">
+			<view class="from-input" style="margin-top:0px;">
+				<view class="input-title">姓名</view><input class="input-text" type="text" placeholder="请输入姓名" />
+			</view>
+			<view class="from-input">
+				<view class="input-title">性别</view>
+				<view style="display:flex;">
+					<u-icon vue-id="0d0c0255-1" name="checkmark-circle-fill" color="#25c173" label="女" bind:__l="__l"></u-icon>
+					<view style="width:20rpx;"></view>
+					<u-icon vue-id="0d0c0255-2" name="checkmark-circle-fill" color="#999" label="男" bind:__l="__l"></u-icon>
+				</view>
+			</view>
+			<view class="from-input">
+				<view class="input-title">手机号</view><input class="input-text" type="text" placeholder="请输入手机号" />
+			</view>
+			<view class="from-input">
+				<view class="input-title">年龄</view><input class="input-text" type="text" placeholder="请输入年龄" />
+			</view>
+			<view class="from-input">
+				<view class="input-title">意向城市</view><input class="input-text" type="text" placeholder="请选择意向城市" />
+			</view>
+		</view>
+		<image class="zmicon" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/zmicon2-1698820532478-6.png"></image>
+		<view class="btn-view">
+			<view class="flex-column">
+				<view style="font-size:18px;color:rgb(51, 51, 51);font-weight:600;">请上传本人近期照</view>
+				<view style="font-size:11px;color:rgb(138, 138, 138);">图片不得超过2M</view>
+			</view>
+			<image style="width:152px;height:100px;" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/addimg.png"></image>
+		</view>
+	</view>
+	<view class="subbtn flex flex-center">提交</view>
+	<view style="width:100%;height:20rpx;"></view>
+</view>

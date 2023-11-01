@@ -1,0 +1,251 @@
+page {
+	background: #eee;
+}
+.search-view {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20rpx;
+}
+.tag-view {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 20rpx;
+}
+
+ /*
+.tech-image {
+	width: 115rpx;
+	height: 115rpx;
+	border-radius: 50%;
+	margin-top: 10rpx;
+}
+
+.border-image {
+	width: 125rpx;
+	height: 125rpx;
+	position: absolute;
+	left: 0rpx;
+	top: 0rpx;
+}
+
+.hot-image {
+	width: 30rpx;
+	height: 50rpx;
+	position: absolute;
+	right: -20rpx;
+	bottom: 8rpx;
+}
+
+.fire-image {
+	width: 40rpx;
+	height: 70rpx;
+	position: absolute;
+	right: -20rpx;
+	top: 1rpx;
+}
+
+.good-view {
+	position: absolute;
+	left: -9rpx;
+	top: 0rpx;
+	width: 30rpx;
+	height: 30rpx;
+	line-height: 30rpx;
+	font-size: 20rpx;
+	background: #d4b37f;
+	color: #fff;
+	text-align: center;
+	border-top-left-radius: 18px;
+}
+
+
+
+
+.project-title {
+	font-weight: bold;
+	font-size: 30rpx;
+	margin-top: 8rpx;
+	display: flex;
+	align-items: center;
+}
+
+.order-view {
+	font-size: 24rpx;
+	margin-left: 20rpx;
+	color: #999;
+}
+
+.status-view {
+	background: #24c373;
+	color: #fff;
+	width: 100%;
+	height: 35rpx;
+	line-height: 35rpx;
+	text-align: center;
+	border-radius: 20rpx;
+	font-size: 24rpx;
+	margin: 5rpx 0rpx;
+}
+
+.right-view {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 20rpx;
+}
+
+.timer {
+	border-radius: 0rpx;
+	width: 80%;
+	background: #e3fff1;
+	color: #24c373;
+	font-size: 20rpx;
+	font-weight: bold;
+}
+
+.info-view {
+	display: flex;
+	align-items: center;
+	/* margin-top: 20rpx; 
+	justify-content: space-between;
+}*/
+.center-col {
+	margin-left: 16rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 180rpx
+}
+.button-view {
+	width: 140rpx;
+	/* height: 50rpx;
+	line-height: 50rpx; */
+	height: 55rpx;
+	line-height: 55rpx;
+	text-align: center;
+	background: #24c373;
+	color: #fff;
+	border-radius: 16rpx;
+	font-size: 26rpx;
+	margin-top: 16rpx;
+	/* margin-bottom:15rpx; */
+}
+.project-image {
+	width: 170rpx;
+	height: 125rpx;
+	border-radius: 20rpx;
+	margin-top: 13rpx;
+}
+.project-title {
+	font-weight: bold;
+	font-size: 30rpx;
+	/* margin-top: 8rpx; */
+	display: flex;
+	align-items: center;
+}
+.project-tips {
+	font-size: 24rpx;
+	color: #999;
+	height: 40rpx;
+	line-height: 40rpx;
+	margin: 8rpx 0rpx;
+}
+.project-price {
+	display: flex;
+	align-items: baseline;
+	/* margin-top: 10rpx; */
+}
+.rmb-icon {
+	font-size: 20rpx;
+	color: red;
+}
+.price-true {
+	font-size: 32rpx;
+	font-weight: bold;
+	color: red;
+}
+.price-false {
+	font-size: 24rpx;
+	color: #d9d9d9;
+	text-decoration: line-through;
+}
+.num-view {
+	color: #999;
+	font-size: 21rpx;
+	margin-top: 6rpx;
+	margin-bottom: 6rpx;
+	/* text-align: center; */
+	margin-right: 20rpx;
+}
+.button-view2 {
+	width: 140rpx;
+	height: 55rpx;
+	line-height: 55rpx;
+	text-align: center;
+	background: #24c373;
+	color: #fff;
+	border-radius: 16rpx;
+	font-size: 24rpx;
+	margin-right: 10rpx;
+	/* margin-top: 30rpx; */
+}
+.personal {
+	/* width:96%; */
+	border-radius: 30rpx;
+	border: 4rpx solid #24c373;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 20rpx;
+	background: #fff;
+	align-items: center;
+}
+.personal-image {
+	width: 120rpx;
+	height: 120rpx;
+	border-radius: 50%;
+}
+.personal-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.personal-center {
+	font-size: 20rpx;
+	color: #999;
+}
+.personal-base {
+	width: 96%;
+	margin-left: 2%;
+	padding: 10rpx 0rpx;
+}
+.personal-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.popup-bottom {
+	width: 94%;
+	position: absolute;
+	bottom: 0rpx;
+	height: 80rpx;
+	background: #fff;
+	border-radius: 20rpx;
+}
+.popup-center {
+	width: 96%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80rpx;
+}
+.btn-push {
+	margin-top: 0px;
+	width: 130px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 30rpx;
+}
+

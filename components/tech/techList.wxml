@@ -1,0 +1,111 @@
+<view>
+	<block wx:for="{{$root.l0}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+		<u-row vue-id="{{'53a06578-1-'+index}}" justify="flex-start" gutter="10" customStyle="{{item.a0}}" align="flex-start" bind:__l="__l" vue-slots="{{['default']}}">
+			<u-col vue-id="{{('53a06578-2-'+index)+','+('53a06578-1-'+index)}}" span="2.3" bind:__l="__l" vue-slots="{{['default']}}">
+				<view style="position:relative;">
+					<block wx:if="{{item.$orig.isGood}}">
+						<view class="good-view">优</view>
+					</block>
+					<image class="tech-image" src="{{item.$orig.headimg}}"></image>
+					<block wx:if="{{item.$orig.isBorder}}">
+						<image class="border-image" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/border.gif"></image>
+					</block>
+					<block wx:if="{{item.$orig.isHot}}">
+						<image class="hot-image" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/hot.gif"></image>
+					</block>
+					<block wx:if="{{item.$orig.isFire}}">
+						<image class="fire-image" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/fire.gif"></image>
+					</block>
+				</view>
+				<view class="status-view">可服务</view>
+			</u-col>
+			<u-col vue-id="{{('53a06578-3-'+index)+','+('53a06578-1-'+index)}}" span="6" bind:__l="__l" vue-slots="{{['default']}}">
+				<view class="center-col">
+					<view style="display:flex;align-items:center;">
+						<view class="project-title">{{item.$orig.name}}</view>
+						<view style="margin-left:10rpx;margin-top:8rpx;">
+							<u-tag vue-id="{{('53a06578-4-'+index)+','+('53a06578-3-'+index)}}" type="success" size="mini" text="更多照片" shape="square" bgColor="#24c373" color="#fff" borderColor="#24c373" customStyle="{{item.a1}}" bind:__l="__l"></u-tag>
+						</view>
+					</view>
+					<view style="display:flex;align-items:center;">
+						<u-icon vue-id="{{('53a06578-5-'+index)+','+('53a06578-3-'+index)}}" name="star-fill" label="5.0" color="red" labelColor="red" size="13" labelSize="12" bind:__l="__l"></u-icon>
+						<view class="order-view">已服务：<label style="font-weight:bold;color:#7f7f7f;">174</label>单</view>
+					</view>
+					<view class="info-view">
+						<u-icon vue-id="{{('53a06578-6-'+index)+','+('53a06578-3-'+index)}}" name="home" label="烧饭饭" labelColor="#999" color="#999" size="18" labelSize="12" bind:__l="__l"></u-icon>
+						<u-icon vue-id="{{('53a06578-7-'+index)+','+('53a06578-3-'+index)}}" name="chat" label="89" labelColor="#999" color="#999" size="18" labelSize="12" bind:__l="__l"></u-icon>
+						<u-icon vue-id="{{('53a06578-8-'+index)+','+('53a06578-3-'+index)}}" name="heart" label="1426" labelColor="#999" color="#999" size="18" labelSize="12" bind:__l="__l"></u-icon>
+					</view>
+				</view>
+			</u-col>
+			<u-col vue-id="{{('53a06578-9-'+index)+','+('53a06578-1-'+index)}}" span="3.6" bind:__l="__l" vue-slots="{{['default']}}">
+				<view class="right-view">
+					<view class="status-view timer">最早可约11:00</view>
+				</view>
+				<view class="right-view" style="margin-top:10rpx;">
+					<u-icon vue-id="{{('53a06578-10-'+index)+','+('53a06578-9-'+index)}}" name="map-fill" label="2.7km" color="#24c373" labelSize="12" labelColor="#000" bind:__l="__l"></u-icon>
+				</view>
+				<view class="right-view" style="margin-top:10rpx;">
+					<view data-event-opts="{{[['tap',[['e0',['$event']]]]]}}" class="button-view" bindtap="__e">立即预约</view>
+				</view>
+			</u-col>
+		</u-row>
+	</block>
+	<u-popup vue-id="53a06578-11" show="{{show}}" round="10" customStyle="{{$root.a2}}" data-event-opts="{{[['^close',[['close']]]]}}" bind:close="__e" bind:__l="__l" vue-slots="{{['default']}}">
+		<view style="width:94%;margin:0 auto;">
+			<view class="personal"> 
+				<view style="width:30%;text-align:center;">
+					<image class="personal-image" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/11.jpg"></image>
+				</view>
+				<view style="flex-grow:1;">
+					<view class="personal-top personal-base"><label style="font-weight:bold;font-size:30rpx;">菜将军</label><label style="font-size:24rpx;color:red;">5.0分</label></view>
+					<view class="personal-center personal-base">从事厨师行业10年，擅长川菜，徽菜，粤菜，手艺精湛,认真负责，很高兴为您服务，欢迎预约</view>
+					<view class="personal-bottom personal-base">
+						<u-icon vue-id="{{('53a06578-12')+','+('53a06578-11')}}" name="account-fill" label="实名认证" color="#24c373" labelColor="#24c373" size="14" labelSize="12" bind:__l="__l"></u-icon>
+						<u-icon vue-id="{{('53a06578-13')+','+('53a06578-11')}}" name="file-text-fill" label="爽约包退" color="#24c373" labelColor="#24c373" size="14" labelSize="12" bind:__l="__l"></u-icon>
+						<u-icon vue-id="{{('53a06578-14')+','+('53a06578-11')}}" name="photo-fill" label="资格证书>" color="#24c373" labelColor="#24c373" size="14" labelSize="12" data-event-opts="{{[['^click',[['to',['/pages/teacher/certificate',['o']]]]]]}}" bind:click="__e" bind:__l="__l"></u-icon>
+					</view>
+				</view>
+			</view>
+			<view style="width:100%;height:500rpx;overflow-y:auto;">
+				<block wx:for="{{$root.l1}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+					<u-row vue-id="{{('53a06578-15-'+index)+','+('53a06578-11')}}" justify="flex-start" gutter="10" customStyle="{{item.a3}}" align="flex-start" bind:__l="__l" vue-slots="{{['default']}}">
+						<u-col vue-id="{{('53a06578-16-'+index)+','+('53a06578-15-'+index)}}" span="3.5" customStyle="{{item.a4}}" bind:__l="__l" vue-slots="{{['default']}}">
+							<image class="project-image" src="{{item.$orig.icon}}"></image>
+						</u-col>
+						<u-col vue-id="{{('53a06578-17-'+index)+','+('53a06578-15-'+index)}}" span="5" customStyle="{{item.a5}}" bind:__l="__l" vue-slots="{{['default']}}">
+							<view style="display:flex;flex-direction:column;justify-content:space-between;height:120rpx;">
+								<view class="project-title">{{item.$orig.name+''}}<view style="margin-left:20rpx;">
+										<u-icon vue-id="{{('53a06578-18-'+index)+','+('53a06578-17-'+index)}}" name="clock" size="13" color="#999" labelSize="10" label="{{item.$orig.timer+'分钟'}}" labelColor="#999" bind:__l="__l"></u-icon>
+									</view>
+								</view>
+								<view class="num-view">{{"超"+item.$orig.num+"人选择"}}</view>
+								<view class="project-price">
+									<view class="rmb-icon">￥</view>
+									<view class="price-true">{{item.$orig.original}}</view>
+									<view class="price-false">{{"￥"+item.$orig.price}}</view>
+								</view>
+							</view>
+						</u-col>
+						<u-col vue-id="{{('53a06578-19-'+index)+','+('53a06578-15-'+index)}}" span="4.2" justify="center" customStyle="{{item.a6}}" bind:__l="__l" vue-slots="{{['default']}}">
+							<u-number-box vue-id="{{('53a06578-20-'+index)+','+('53a06578-19-'+index)}}" integer="{{true}}" step="{{1}}" min="{{0}}" max="{{99}}" value="{{item.$orig.buycount}}" data-event-opts="{{[['^input',[['__set_model',['$0','buycount','$event',[]],[[['projectList','',index]]]],['changeInput']]]]}}" bind:input="__e" bind:__l="__l" vue-slots="{{['minus','input','plus']}}">
+								<view class="minus" slot="minus">
+									<u-icon vue-id="{{('53a06578-21-'+index)+','+('53a06578-20-'+index)}}" name="minus" size="12" color="#24c373" bind:__l="__l"></u-icon>
+								</view><text class="input" style="width:15px;text-align:center;" slot="input">{{item.$orig.buycount}}</text>
+								<view class="plus" slot="plus">
+									<u-icon vue-id="{{('53a06578-22-'+index)+','+('53a06578-20-'+index)}}" name="plus" color="#FFFFFF" size="12" bind:__l="__l"></u-icon>
+								</view>
+							</u-number-box>
+						</u-col>
+					</u-row>
+				</block>
+				<view style="width:100%;height:120rpx;"></view>
+				<view class="popup-bottom">
+					<view class="popup-center"><label style="font-size:28rpx;color:red;">合记：<label style="font-weight:bold;">￥0</label></label>
+						<view data-event-opts="{{[['tap',[['onClick',['$event']]]]]}}" class="button-view btn-push" bindtap="__e">提交订单</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</u-popup>
+</view>

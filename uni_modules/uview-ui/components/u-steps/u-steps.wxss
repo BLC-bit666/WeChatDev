@@ -1,0 +1,21 @@
+view.data-v-387c9f09, scroll-view.data-v-387c9f09, swiper-item.data-v-387c9f09 {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: auto;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.u-steps.data-v-387c9f09 {
+  display: flex;
+  flex-direction: row;
+}
+.u-steps--column.data-v-387c9f09 {
+  flex-direction: column;
+}
+.u-steps--row.data-v-387c9f09 {
+  flex-direction: row;
+  flex: 1;
+}
+

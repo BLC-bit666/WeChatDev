@@ -1,0 +1,107 @@
+<view>
+	<view class="background-view">
+		<view class="status-text">订单已完成</view>
+	</view>
+	<view class="w94 step-view mt130 pt30">
+		<u-steps vue-id="a2b0478a-1" current="{{2}}" activeColor="#24c373" bind:__l="__l" vue-slots="{{['default']}}">
+			<u-steps-item vue-id="{{('a2b0478a-2')+','+('a2b0478a-1')}}" title="厨师接单" bind:__l="__l" vue-slots="{{['icon']}}">
+				<image class="step-image" slot="icon" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/1_cur.png"></image>
+			</u-steps-item>
+			<u-steps-item vue-id="{{('a2b0478a-3')+','+('a2b0478a-1')}}" title="厨师出发" bind:__l="__l" vue-slots="{{['icon']}}">
+				<image class="step-image" slot="icon" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/2_cur.png"></image>
+			</u-steps-item>
+			<u-steps-item vue-id="{{('a2b0478a-4')+','+('a2b0478a-1')}}" title="厨师到达" bind:__l="__l" vue-slots="{{['icon']}}">
+				<image class="step-image" slot="icon" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/3_cur.png"></image>
+			</u-steps-item>
+			<u-steps-item vue-id="{{('a2b0478a-5')+','+('a2b0478a-1')}}" title="开始服务" bind:__l="__l" vue-slots="{{['icon']}}">
+				<image class="step-image" slot="icon" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/4.png"></image>
+			</u-steps-item>
+			<u-steps-item vue-id="{{('a2b0478a-6')+','+('a2b0478a-1')}}" title="服务完成" bind:__l="__l" vue-slots="{{['icon']}}">
+				<image class="step-image" slot="icon" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/5.png"></image>
+			</u-steps-item>
+		</u-steps>
+	</view>
+	<view class="w94 step-view mt20">
+		<view data-event-opts="{{[['tap',[['to',['/pages/user/addresslist',['o']]]]]]}}" class="address-view" bindtap="__e">
+			<view>
+				<u-icon vue-id="a2b0478a-7" name="map-fill" color="#000" size="15" label="一位不愿意透露姓名的吴俊雄先生 13570513190" labelColor="#000" labelSize="12" bind:__l="__l"></u-icon>
+			</view>
+			<view style="font-size:26rpx;color:#000;margin-top:20rpx;">陕西省西安市临潼区陕鼓大道058号</view>
+		</view>
+	</view>
+	<view class="w94 step-view mt20">
+		<view class="box-view bold">
+			<view class="dot"></view><label>服务项目</label>
+		</view>
+		<view class="project-view">
+			<view class="project-item">
+				<view>
+					<view>商务洽谈x1</view>
+					<view style="margin-top:10rpx;">
+						<u-icon vue-id="a2b0478a-8" name="clock-fill" color="#24c373" label="60分钟" size="15" labelSize="12" labelColor="#999" bind:__l="__l"></u-icon>
+					</view>
+				</view>
+				<view class="project-price">￥218</view>
+			</view>
+			<view class="project-item">
+				<view>
+					<view>升学宴席x1</view>
+					<view style="margin-top:10rpx;">
+						<u-icon vue-id="a2b0478a-9" name="clock-fill" color="#24c373" label="120分钟" size="15" labelSize="12" labelColor="#999" bind:__l="__l"></u-icon>
+					</view>
+				</view>
+				<view class="project-price">￥368</view>
+			</view>
+		</view>
+		<view class="box-view center h50" style="margin-top:10rpx;"><label style="color:#999;">服务总时长</label>
+			<view class="r-label">180分钟</view>
+		</view>
+		<view class="box-view center h50"><label style="color:#999;">服务厨师</label>
+			<view class="r-label">隔壁老王</view>
+		</view>
+		<view class="box-view center h50"><label style="color:#999;">服务时间</label>
+			<view class="r-label">2023-10-25 12:30:00</view>
+		</view>
+	</view>
+	<view class="w94 step-view mt20">
+		<view class="box-view bold">
+			<view class="dot"></view><label>费用详情</label>
+		</view>
+		<view class="box-view center h50" style="margin-top:10rpx;"><label style="color:#999;">项目金额</label>
+			<view class="r-label">586.00</view>
+		</view>
+		<view class="box-view center h50"><label style="color:#999;">出行费用</label>
+			<view><label style="color:#24c373;margin-right:10rpx;">出租</label><label>全程3.54公里</label></view>
+			<view class="r-label">￥28.00</view>
+		</view>
+		<view class="box-view center h50"><label style="color:#999;">备注</label>
+			<view class="r-label">做的不好吃我可是要退单的哈！</view>
+		</view>
+		<view class="box-view center h50"><label style="color:#999;">付款方式</label>
+			<view class="r-label">微信支付</view>
+		</view>
+		<view class="box-view center h50"><label style="color:#000;">项目总价</label>
+			<view class="r-label project-price">￥614.00</view>
+		</view>
+	</view>
+	<view class="w94 step-view mt20">
+		<view class="box-view bold">
+			<view class="dot"></view><label>订单信息</label>
+		</view>
+		<view class="box-view center h50" style="margin-top:10rpx;"><label style="color:#999;">订单编号</label>
+			<view class="r-label" style="display:flex;">20231025025727756084372<u-icon vue-id="a2b0478a-10" name="file-text" size="18" color="#999" bind:__l="__l"></u-icon>
+			</view>
+		</view>
+		<view class="box-view center h50"><label style="color:#999;">下单时间</label>
+			<view class="r-label">2023-10-25 02:56:27</view>
+		</view>
+		<view class="box-view center h50"><label style="color:#999;">付款时间</label>
+			<view class="r-label">2023-10-25 12:30:00</view>
+		</view>
+		<view class="box-view center h50"><label style="color:#999;">取消时间</label>
+			<view class="r-label">2023-10-25 12:30:00</view>
+		</view>
+	</view>
+	<view style="width:100%;height:100rpx;"></view>
+	<view class="botton-view">再来一单</view>
+</view>

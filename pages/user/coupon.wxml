@@ -1,0 +1,88 @@
+<view class="flex-col page data-v-675103fe">
+	<view class="flex-col group data-v-675103fe">
+		<view class="flex-col data-v-675103fe">
+			<view class="flex-col section_2 data-v-675103fe" style="flex-shrink:0;">
+				<u-tabs vue-id="82ce79b6-1" list="{{menu}}" lineWidth="60" lineColor="rgb(24, 181, 103)" scrollable="{{false}}" class="data-v-675103fe" bind:__l="__l"></u-tabs>
+			</view>
+			<block wx:if="{{menuValue==0}}">
+				<view class="flex-col group_2 data-v-675103fe">
+					<view class="section_4 data-v-675103fe"></view>
+					<view class="flex-col list data-v-675103fe">
+						<block wx:for="{{dataList}}" wx:for-item="item" wx:for-index="i" wx:key="i">
+							<view class="list-item flex-row data-v-675103fe">
+								<view class="left-group flex-col items-center data-v-675103fe">
+									<block wx:if="{{!item.type}}">
+										<view class="top-group data-v-675103fe"><text class="text_5 data-v-675103fe">￥</text><text class="text_7 data-v-675103fe">{{item.money}}</text></view>
+									</block>
+									<block wx:if="{{item.type}}">
+										<view class="top-group data-v-675103fe"><text class="text_7 data-v-675103fe">{{item.discount}}</text><text class="text_5 data-v-675103fe">折</text></view>
+									</block>
+									<block wx:if="{{item.condition==0}}"><text class="text_9 data-v-675103fe">无门槛</text></block>
+									<block wx:else><text class="text_9 data-v-675103fe">{{"满"+item.condition+"使用"}}</text></block>
+								</view>
+								<view class="right-section flex-col data-v-675103fe"><text class="text_11 data-v-675103fe">厨师优惠券</text>
+									<block wx:if="{{item.use==0}}"><text class="text_13 data-v-675103fe">{{"有效期至"+item.end_time}}</text></block>
+									<block wx:if="{{item.use==1}}"><text class="text_133 data-v-675103fe">已使用</text></block>
+									<block wx:if="{{item.chaoshi==1}}"><text class="text_133 data-v-675103fe">已超时</text></block>
+								</view>
+							</view>
+						</block>
+					</view>
+				</view>
+			</block>
+			<block wx:if="{{menuValue==1}}">
+				<view class="flex-col group_2 data-v-675103fe">
+					<view class="section_4 data-v-675103fe"></view>
+					<view class="flex-col list data-v-675103fe">
+						<block wx:for="{{dataList}}" wx:for-item="item" wx:for-index="i" wx:key="i">
+							<view class="list-item flex-row data-v-675103fe">
+								<view class="left-group flex-col items-center data-v-675103fe">
+									<block wx:if="{{!item.type}}">
+										<view class="top-group data-v-675103fe"><text class="text_5 data-v-675103fe">￥</text><text class="text_7 data-v-675103fe">{{item.money}}</text></view>
+									</block>
+									<block wx:if="{{item.type}}">
+										<view class="top-group data-v-675103fe"><text class="text_7 data-v-675103fe">{{item.discount}}</text><text class="text_5 data-v-675103fe">折</text></view>
+									</block>
+									<block wx:if="{{item.condition==0}}"><text class="text_9 data-v-675103fe">无门槛</text></block>
+									<block wx:else><text class="text_9 data-v-675103fe">{{"满"+item.condition+"使用"}}</text></block>
+								</view>
+								<view class="right-section flex-col data-v-675103fe"><text class="text_11 data-v-675103fe">厨师优惠券</text>
+									<block wx:if="{{item.use==0}}"><text class="text_13 data-v-675103fe">{{"有效期至"+item.end_time}}</text></block>
+									<block wx:if="{{item.use==1}}"><text class="text_133 data-v-675103fe">已使用</text></block>
+									<block wx:if="{{item.chaoshi==1}}"><text class="text_133 data-v-675103fe">已超时</text></block>
+								</view>
+							</view>
+						</block>
+					</view>
+				</view>
+			</block>
+			<block wx:if="{{menuValue==2}}">
+				<view class="flex-col group_3 data-v-675103fe">
+					<view class="section_4 data-v-675103fe"></view>
+					<view class="flex-col list data-v-675103fe">
+						<block wx:for="{{dataList}}" wx:for-item="item" wx:for-index="i" wx:key="i">
+							<view class="list-item flex-col data-v-675103fe">
+								<view class="top-section flex-row data-v-675103fe">
+									<view class="left-group flex-col items-center data-v-675103fe">
+										<block wx:if="{{!item.type}}">
+											<view class="top-group data-v-675103fe"><text class="text_5 data-v-675103fe">￥</text><text class="text_7 data-v-675103fe">{{item.money}}</text></view>
+										</block>
+										<block wx:if="{{item.type}}">
+											<view class="top-group data-v-675103fe"><text class="text_7 data-v-675103fe">{{item.discount}}</text><text class="text_5 data-v-675103fe">折</text></view>
+										</block>
+										<block wx:if="{{item.condition==0}}"><text class="text_9 data-v-675103fe">无门槛</text></block>
+										<block wx:else><text class="text_9 data-v-675103fe">{{"满"+item.condition+"使用"}}</text></block>
+									</view>
+									<view class="right-section flex-col data-v-675103fe"><text class="text_11 data-v-675103fe">厨师优惠券</text><text class="text_13 data-v-675103fe">{{"有效期至"+item.end_time}}</text></view>
+								</view>
+								<view class="bottom-group flex-row data-v-675103fe">
+									<image class="image_1 data-v-675103fe" src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/61ab188e1f655f0011bbaece/61e7d9270c0e3200129ec72c/16425844648387456835.png"></image><text class="text_15 data-v-675103fe">优惠券已过期</text>
+								</view>
+							</view>
+						</block>
+					</view>
+				</view>
+			</block>
+		</view>
+	</view>
+</view>

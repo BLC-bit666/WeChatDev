@@ -1,0 +1,120 @@
+page {
+	background: #eee;
+}
+.background-view {
+	position: fixed;
+	width: 100%;
+	height: 200rpx;
+	background: #24c373;
+	top: 0rpx;
+}
+.status-text {
+	color: #fff;
+	font-weight: bold;
+	font-size: 36rpx;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 30rpx;
+}
+.r-label {
+	font-size: 26rpx;
+	color: #000;
+}
+.step-image {
+	width: 80rpx;
+	height: 65rpx;
+}
+.w94 {
+	width: 94%;
+	margin: 0 auto;
+}
+.h50 {
+	height: 50rpx;
+	line-height: 50rpx;
+}
+.mt130 {
+	margin-top: 130rpx;
+	/* top:130rpx; */
+}
+.mt20 {
+	margin-top: 20rpx;
+}
+.pt30 {
+	padding: 30rpx 0rpx;
+}
+.step-view {
+	background: #fff;
+	border-radius: 20rpx;
+	position: relative;
+}
+.slot-icon {
+	width: 21px;
+	height: 21px;
+	border-radius: 100px;
+	font-size: 12px;
+	color: #fff;
+	line-height: 21px;
+	text-align: center;
+}
+.address-view {
+	width: 94%;
+	margin: 0 auto;
+	/* background: #24c373; */
+	padding: 20rpx 10rpx;
+	border-radius: 20rpx;
+	margin-top: 20rpx;
+}
+.box-view {
+	width: 94%;
+	margin: 0 auto;
+	display: flex;
+
+	align-items: center;
+}
+.bold {
+	font-weight: bold;
+	justify-content: flex-start;
+	font-size: 30rpx;
+	padding-top: 20rpx;
+}
+.center {
+	justify-content: space-between;
+	font-size: 26rpx;
+}
+.dot {
+	width: 10rpx;
+	height: 10rpx;
+	border-radius: 50%;
+	background: #24c373;
+	margin-right: 6rpx;
+}
+.botton-view {
+	width: 100%;
+	position: fixed;
+	bottom: 0rpx;
+	height: 80rpx;
+	color: #fff;
+	background: #24c373;
+	text-align: center;
+	line-height: 80rpx;
+}
+.project-view {
+	width: 96%;
+	margin:0 auto;
+	margin-top: 20rpx;
+	margin-bottom: 20rpx;
+}
+.project-item {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10rpx;
+	/* border-bottom: 2rpx solid #eee; */
+}
+.project-price {
+	color: red;
+	font-weight: bold;
+	font-size: 26rpx;
+}
+

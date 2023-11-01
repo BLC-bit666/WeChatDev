@@ -1,0 +1,12 @@
+<view style="width:94%;margin:0 auto;">
+	<view class="address-view">
+		<view class="address-info">陕西省西安市临潼区陕鼓大道058号</view>
+		<view class="address-edit">
+			<view>
+				<u-icon vue-id="2a43321f-1" name="checkmark-circle" color="#999" size="18" bind:__l="__l"></u-icon>
+			</view>
+			<view style="display:flex;justify-content:flex-end;align-items:center;font-size:30rpx;"><label style="color:red;">删除</label><label style="color:#999;margin-left:20rpx;">编辑</label></view>
+		</view>
+	</view>
+	<view data-event-opts="{{[['tap',[['to',['/pages/user/addressedit',['o']]]]]]}}" class="bottom-view" bindtap="__e">新增地址</view>
+</view>

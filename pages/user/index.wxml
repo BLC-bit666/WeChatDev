@@ -1,0 +1,41 @@
+<view>
+	<view style="position:relative;">
+		<view class="background"></view>
+		<u-cell-group vue-id="5c2bbbc2-1" border="{{false}}" bind:__l="__l" vue-slots="{{['default']}}">
+			<u-cell vue-id="{{('5c2bbbc2-2')+','+('5c2bbbc2-1')}}" customStyle="{{$root.a0}}" border="{{false}}" icon="https://p0.ssl.qhimgs1.com/t01c4249e335e12d5b6.jpg" iconStyle="{{$root.a1}}" title="张小二" titleStyle="{{$root.a2}}" isLink="{{true}}" rightIconStyle="{{$root.a3}}" bind:__l="__l" vue-slots="{{['label']}}">
+				<view style="width:150rpx;" slot="label">
+					<u-tag style="margin-left:20rpx;margin-top:10rpx;" vue-id="{{('5c2bbbc2-3')+','+('5c2bbbc2-2')}}" text="普通会员" type="warning" borderColor="#fff" color="#fff" plain="{{true}}" size="mini" shape="circle" bind:__l="__l"></u-tag>
+				</view>
+			</u-cell>
+		</u-cell-group>
+	</view>
+	<view class="template-view" style="position:relative;">
+		<view class="profit-view" style="width:100%;">
+			<view data-event-opts="{{[['tap',[['to',['/pages/user/collect',['o']]]]]]}}" class="profit-item bg-white box-view" style="position:relative;" bindtap="__e"><label class="bt-title">我的收藏</label><label>{{"已收藏"+count+"人"}}</label>
+				<image class="pos-image" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/love.png"></image>
+			</view>
+			<view data-event-opts="{{[['tap',[['to',['/pages/user/coupon',['o']]]]]]}}" class="profit-item bg-white box-view" style="position:relative;" bindtap="__e"><label class="bt-title">我的优惠券</label><label>{{"剩余"+coupon+"张优惠券"}}</label>
+				<image class="pos-image" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/coupon.png"></image>
+			</view>
+		</view>
+	</view>
+	<view class="template-view" style="margin-top:18px;background:#fff;">
+		<view class="title-view">其他功能</view>
+		<view class="tools-view">
+			<u-grid vue-id="5c2bbbc2-4" border="{{false}}" col="4" bind:__l="__l" vue-slots="{{['default']}}">
+				<block wx:for="{{$root.l0}}" wx:for-item="listItem" wx:for-index="listIndex" wx:key="listIndex">
+					<u-grid-item bind:click="__e" vue-id="{{('5c2bbbc2-5-'+listIndex)+','+('5c2bbbc2-4')}}" data-event-opts="{{[['^click',[['to',['$0',['o']],[[['gridList','',listIndex,'url']]]]]]]}}" bind:__l="__l" vue-slots="{{['default']}}">
+						<u-icon vue-id="{{('5c2bbbc2-6-'+listIndex)+','+('5c2bbbc2-5-'+listIndex)}}" customStyle="{{listItem.a4}}" name="{{listItem.$orig.icon}}" size="{{34}}" bind:__l="__l"></u-icon><text class="grid-text">{{listItem.$orig.title}}</text>
+					</u-grid-item>
+				</block>
+			</u-grid>
+		</view>
+	</view>
+	<view style="width:100%;margin:0 auto;display:flex;justify-content:center;align-items:center;font-weight:bold;margin-top:10rpx;">
+		<image style="width:40rpx;height:40rpx;margin-right:10rpx;" src="https://cdn.jsdelivr.net/gh/Lanailearn/img/img/fire.png"></image>附近厨师
+	</view>
+	<view style="width:94%;margin:0 auto;">
+		<tech-list bind:click="__e" vue-id="5c2bbbc2-7" data-event-opts="{{[['^click',[['to',['/pages/order/create',['o']]]]]]}}" bind:__l="__l"></tech-list>
+	</view>
+	<view style="width:100%;height:50rpx;"></view>
+</view>

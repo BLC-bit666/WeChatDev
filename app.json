@@ -1,0 +1,81 @@
+{
+  "lazyCodeLoading": "requiredComponents",
+  "pages": [
+    "pages/index/index",
+    "pages/teacher/index",
+    "pages/order/list",
+    "pages/user/index",
+    "pages/teacher/certificate",
+    "pages/order/create",
+    "pages/user/addressedit",
+    "pages/user/addresslist",
+    "pages/order/detail",
+    "pages/user/wallet",
+    "pages/user/record",
+    "pages/teacher/settle",
+    "pages/user/collect",
+    "pages/user/coupon"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#444444",
+    "selectedColor": "#18B567",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tab/home.png",
+        "selectedIconPath": "static/tab/home_s.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/teacher/index",
+        "iconPath": "static/tab/js.png",
+        "selectedIconPath": "static/tab/js_s.png",
+        "text": "厨师"
+      },
+      {
+        "pagePath": "pages/order/list",
+        "iconPath": "static/tab/order.png",
+        "selectedIconPath": "static/tab/order_s.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "static/tab/my.png",
+        "selectedIconPath": "static/tab/my_s.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "u-swiper": "/uni_modules/uview-ui/components/u-swiper/u-swiper",
+    "u-row": "/uni_modules/uview-ui/components/u-row/u-row",
+    "u-col": "/uni_modules/uview-ui/components/u-col/u-col",
+    "u-tag": "/uni_modules/uview-ui/components/u-tag/u-tag",
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon",
+    "u-number-box": "/uni_modules/uview-ui/components/u-number-box/u-number-box",
+    "u-input": "/uni_modules/uview-ui/components/u-input/u-input",
+    "u-steps": "/uni_modules/uview-ui/components/u-steps/u-steps",
+    "u-steps-item": "/uni_modules/uview-ui/components/u-steps-item/u-steps-item",
+    "u-sticky": "/uni_modules/uview-ui/components/u-sticky/u-sticky",
+    "u-tabs": "/uni_modules/uview-ui/components/u-tabs/u-tabs",
+    "u-search": "/uni_modules/uview-ui/components/u-search/u-search",
+    "tech-list": "/components/tech/techList",
+    "u--form": "/uni_modules/uview-ui/components/u--form/u--form",
+    "u-form-item": "/uni_modules/uview-ui/components/u-form-item/u-form-item",
+    "u--input": "/uni_modules/uview-ui/components/u--input/u--input",
+    "u-cell-group": "/uni_modules/uview-ui/components/u-cell-group/u-cell-group",
+    "u-cell": "/uni_modules/uview-ui/components/u-cell/u-cell",
+    "u-grid": "/uni_modules/uview-ui/components/u-grid/u-grid",
+    "u-grid-item": "/uni_modules/uview-ui/components/u-grid-item/u-grid-item"
+
+  }
+}
